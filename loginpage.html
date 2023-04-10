@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <LINK rel="website icon"  type="png" href="./image/logo.png">
+</head>
+<script>
+  function validate(){
+    var email = document.forms["form2"]["email"].value;
+    var password = document.forms["form2"]["password"].value;
+
+    if (email == "" || password == "") {
+      alert("Please Make Sure That You Have Filled All Details");
+    }
+    else {
+      alert("Login Successfully");
+    }
+  }
+</script>
+<body>
+  <!-- Navigation bar component -->
+        <div class="header_desp">
+            <div class="container">
+                <div class="header_des">
+                    <h2><a href="blog.html">Blog</a></h2>
+                    <h2><a href="product-page.html">Featured Products</a></h2>
+                    <h2><a href="research.html">Research</a></h2>
+                    <h2><a href="#">My Account</a></h2>
+                    <h2><a href="ordertracking.html">Order tracking</a></h2>
+                </div>
+            </div>
+        </div>
+        <div class="backgroundimg">
+         
+           <!-- The menu bar provides navigation to different sections of this  website -->
+        <nav class="navbar">
+            <ul class="navul">
+              <img src="./image/logo.png">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="product-page.html">Bonsai</a></li>
+            <li><a href="Pots.html">Pots</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="blogpage.html">Bonsai Care</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+    <!-- The search section allows users to quickly find what they are looking for -->
+    <nav class="search">
+        <input type="text" class="search-box" placeholder="search Bonsai">
+        <button class="search-btn">search</button>
+    </nav>
+    </nav>
+    
+    
+ <div class="login1">
+  <!-- The section showcase the login form -->
+    <img src="./image/logo.png">
+    <h1>Welcome to Bonsai bazzar!</h1>
+    <p> Please login.</p>
+    <form name="form2" onsubmit="validate()">
+      <input type="text" name="email" placeholder="Enter email or Phone Number">
+      <input type="password" name="password" placeholder="Password">
+      <p class="ForgotPassword">
+        <a href="#">Forgot Password?</a>
+      </p>
+    <button>Sign in</button>
+  </form>
+    <div class="member1">
+      Not a member? <a href="signup.html">Register Now</a>
+    </div>
+  </div>
+  <!-- The footer section contains information and links typically found at the bottom of a webpage -->
+<footer class="footer-section">
+  <footer class="footers">
+                    
+    <div class="box">
+        <h2>Quick links</h2>
+        <a href="homepage.html">Home</a>
+        <a href="product-page.html">Bonsai</a>
+        <a href="Pots.html">Pots</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="blogpage.html">Bonsai Care</a>
+    </div>
+
+    <div class="box">
+        <h2>About</h2>
+        <a href="#">About us</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">delivery Information</a>
+    </div>
+
+    <div class="box">
+        <h2>locations</h2>
+        <a href="#">Kathmandu</a>
+        <a href="#">Nepalgunj</a>
+        <a href="#">Biratnagar</a>
+        <a href="#">Laltipur</a>
+    </div>
+
+    <div class="box">
+      <h2>Contact Info</h2>
+      <a href="#">01-560006</a>
+      <a href="#">Bonsai@gmail.com</a>
+      <a href="#">Kathmandu</a>
+  </div>
+  <div class="box">
+    <h2>Instal App</h2>
+    <a href="#">From Googleplay or Appstore</a>
+    <img src="./image/play.jpg">
+    <img src="./image/app.jpg">
+    <p><h2>Secured payment GateWay</h2></p>
+    <img src="./image/payment.png" alt="">
+</div>
+</footer>
+
+
+  
+
+
+
+
+
+
+<div class="credit"> created by Team 1 <span> </span> | all rights reserved </div>
+
+
+
+
+</body>
+</html>
